@@ -1,0 +1,41 @@
+<!--
+Sangeet Satpathy
+CS22B Summer 2022
+7/10/22
+Assignment 5
+HTML Code for the Sales Tax Computer Program.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sales Tax Calculator</title>
+        <link rel="stylesheet" href="salestax.css">
+    </head>
+    <body>
+        <main>
+            <h1>Sales Tax Calculator</h1>
+            <p>Enter Subtotal and Tax Rate and click "Calculate".</p>
+            <div>
+                <label for="subtotal">Subtotal:</label>
+                <input type="text" id="subtotal">
+            </div>
+            <div>
+                <label for="taxRate">Tax Rate:</label>
+                <input type="text" id="taxRate">
+            </div>
+            <div>
+                <label for="salesTax">Sales Tax:</label>
+                <input type="text" id="salesTax" disabled>
+            </div>
+            <div>
+                <label for="total">Total:</label>
+                <input type="text" id="total" disabled>
+            </div>
+            <div id="button-container">
+                <input type="button" id="calculate" value="Calculate">
+                <input type="button" id="clear" value="Clear">
+            </div>
+        </main>
+    </body>
+    <script src="salestax.js"></script>
+</html>

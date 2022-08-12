@@ -1,0 +1,11 @@
+Sangeet Satpathy
+Assignment 6
+Test Case File (2 Good Data Inputs, 2 Bad Data Inputs)
+
+                    Test Case 1:                Test Case 2:                Test Case 3:                                    Test Case 4:
+Good/Bad Input:     Good                        Good                        Bad                                             Bad
+Name(input):        Tester1, Tester2            Tester1, Tester2            Not inputted                                    Not inputted
+Score(input):       90, 90                      10, 20                      50                                              -10
+Average Output:     90                          15                          NaN(prompts to enter name when click add)       NaN(Prompts to re-enter both name and score)
+Highest Output:     Tester1 (not Tester2)       Tester2                     undefined(prompts to enter name when click add) undefined(Prompts to re-enter both name and score)
+Scores Output:      Tester1:90, Tester2:90      Tester1:10, Tester2:20      N/A(prompts to enter name when click add)       N/A(Prompts to re-enter both name and score)

@@ -1,0 +1,29 @@
+"Good" Data --> Normal inputs that are expected.
+
+Test Case 1:
+Checking whether the Start, Stop, and Reset buttons work.
+Expected Output: Start button should start the stopwatch, ticking every 10 milliseconds and updating,
+stop button should stop the timer and PAUSE it. Reset button should reset everything to 0.
+Output: It works as intended.
+
+--------------------
+
+"Bad" Data --> Data that tries to make the program fail:
+
+Test Case 2:
+First running the stopwatch, then clicking the RESET button without stopping first.
+Expected output: the program should reset the timer to 0 but not stop or break, but instead
+continue running.
+Output: the expected output.
+
+Test Case 3:
+Pressing start multiple times.
+Expected output: the program should just ignore the next several times the stopwatch runs and not
+speed up the timer.
+Output: Initially, the timer would speed up, so I added code in to fix that using a global boolean to
+check whether the timer was already running or not. Now it works as expected.
+
+Test Case 4:
+Pressing the Stop Button without starting anything.
+Expected output: Nothing should happen (no errors).
+Output: as expected.

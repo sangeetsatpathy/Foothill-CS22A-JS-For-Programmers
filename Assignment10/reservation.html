@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservation Request</title>
+        <link rel="stylesheet" href="reservation.css">
+    </head>
+    <body>
+        <h1>Reservation Request</h1>
+        <form action="response.html" method="get"
+            name="reservation_form" id="reservation_form">
+            <fieldset id="general-info">
+                <legend>General Information</legend>
+                <div>
+                    <label for="arrival_date">Arrival date:</label>
+                    <input type="text" name="arrival_date" id="arrival_date" autofocus>
+                    <span>*</span>
+                </div>
+                <div>
+                    <label for="num_nights">Nights:</label>
+                    <input type="text" name="num_nights" id="num_nights">
+                    <span id="num_nights_error"></span>
+                </div>
+                <div>
+                    <label for="num_adults">Adults:</label>
+                    <select name="num_adults" id="num_adults">
+                        <option value="0_adults">0</option>
+                        <option value="1_adults">1</option>
+                        <option value="2_adults">2</option>
+                        <option value="3_adults">3</option>
+                        <option value="4_adults">4</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="num_children">Children:</label>
+                    <select name="num_children" id="num_children">
+                        <option value="0_children">0</option>
+                        <option value="1_children">1</option>
+                        <option value="2_children">2</option>
+                        <option value="3_children">3</option>
+                        <option value="4_children">4</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset id="preferences">
+                <legend>Preferences</legend>
+                <label for="room-type">Room type:</label>
+                <div id="room-type">
+                    <input type="radio" id="standard-room">
+                    <label for="standard-room">Standard</label>
+                    <input type="radio" id="business-room">
+                    <label for="business-room">Business</label>
+                    <input type="radio" id="suite-room">
+                    <label for="suite-room">Suite</label>
+                </div>
+                <label for="bed-type">Bed type:</label>
+                <div id="bed-type">
+                    <input type="radio" id="king-bed">
+                    <label for="king-bed">King</label>
+                    <input type="radio" id="double-bed">
+                    <label for="double-bed">Double Double</label>
+                </div>
+                <input type="checkbox" id="smoking">
+                <label for="smoking">Smoking</label>
+            </fieldset>
+            <fieldset id="contact-info">
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"> <span id="email-error"></span>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label> 
+                    <input type="tel" id="phone" value="999-999-9999" 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <span id="phone-error"></span>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" id="submit" value="Submit Request">
+            </div>
+        </form>
+    </body>
+</html>

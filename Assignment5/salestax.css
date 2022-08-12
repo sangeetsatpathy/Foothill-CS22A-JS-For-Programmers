@@ -1,0 +1,32 @@
+/*
+Sangeet Satpathy
+CS22B Summer 2022
+7/10/22
+Assignment 5
+CSS Code for the Sales Tax Calculator Program.
+*/
+h1{
+    color: blue;
+}
+
+label{
+    float: left;
+    width: 16em;
+    text-align: right;
+}
+
+div{
+    margin-bottom: 0.5em;
+}
+
+input{
+    margin-left: 1em;
+}
+
+#calculate{
+    margin-bottom: 1em;
+}
+
+#button-container{
+    margin-left: 16em;
+}

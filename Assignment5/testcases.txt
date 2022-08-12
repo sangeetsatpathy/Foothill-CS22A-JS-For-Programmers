@@ -1,0 +1,10 @@
+Sangeet Satpathy
+CS22B Summer 2022
+7/10/22
+Test Cases for the Sales Tax Calculator Program.
+
+Test #      Subtotal(Input)     Tax Rate(Input)     Expected Sales Tax     Sales Tax(Output)       Expected Total       Total(Output)
+1           $100                5%                  $5.00                  $5.00                   $105.00              $105.00
+2           $210.50             10%                 $21.05                 $21.05                  $231.55              $231.55
+3           $10000              -1%                 Null (Both Alerts)     Null(Both Alerts)       Null(Both Alerts)    Null(Both Alerts)
+4           $500.234            15%                 Null(TaxRate Alert)    Null(TaxRate Alert)     Null(TaxRate Alert)  Null(TaxRate Alert)

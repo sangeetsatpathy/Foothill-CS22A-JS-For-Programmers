@@ -1,0 +1,43 @@
+<!--
+Sangeet Satpathy
+CS22A Summer 2022
+Assignment 4
+calc.html -> This is the HTML code for a simple website which calculates the amount of
+quarters, dimes, nickels, and pennies required to add up to an inputted amount of change.
+This file provides for all the textboxes and buttons required. -->
+
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Change Calculator</title>
+        <link rel="stylesheet" href="calc.css">
+
+    </head>
+    <body>
+        <main>
+            <h1>Change Calculator</h1><br>
+            <div>
+                <label for="amtChange">Enter amount of change due (0-99):</label>
+                <input type="text" id="amtChange">
+                <input type="button" id="calculate" value="Calculate"> <br>
+            </div>
+            <div>
+                <label for="quarters">Quarters: </label>
+                <input type="text" id="quarters" disabled><br>
+            </div>
+            <div>
+                <label for="dimes">Dimes: </label>
+                <input type="text" id="dimes" disabled><br>
+            </div>
+            <div>
+                <label for="nickels">Nickels: </label>
+                <input type="text" id="nickels" disabled><br>
+            </div>
+            <div>
+                <label for="pennies">Pennies: </label>
+                <input type="text" id="pennies" disabled><br>
+            </div>
+        </main>
+    </body>
+    <script src="calc.js"></script>
+</html>

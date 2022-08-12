@@ -1,0 +1,29 @@
+/*
+Sangeet Satpathy
+CS22A Summer 2022
+Assignment 4
+calc.css --> This is the CSS code for a simple website which calculates the amount of
+quarters, dimes, nickels, and pennies required to add up to an inputted amount of change. 
+This file provides the styling for the website's components.*/
+
+h1{
+    color:blue;
+}
+
+label{
+    float:left;
+    width:16em;
+    text-align:right;
+}
+
+div{
+    margin-bottom: 0.5em;
+}
+
+input{
+    margin-left: 1em;
+}
+
+#calculate{
+    margin-bottom:1em;
+}
